@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Cantico dei Cantici</title>
+            <title type="sub">Edizione Digitale del Capitolo VII</title>
+            
+            <respStmt>
+               <resp>Edizione critica di:</resp>
+               <name>Francesco Mattiussi</name>
+
+            </respStmt>
+
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Università degli Studi di Udine</publisher>
+            <pubPlace>Udine</pubPlace>
+            <date>2025</date>
+
+            <availability>
+               <p>Il progetto è realizzato per la libera consultazione. Tutti i contenuti sono
+                  riproducibili a patto che se ne indichi la fonte.</p>
+            </availability>
+
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <listWit n="Bibbie del IX secolo">
+               <witness xml:id="Re1_2">Reims, Bibliothèque municipale, 2 (Reims, 801-900)</witness>
+               <witness xml:id="P15_2">Paris, Bibliothèque nationale de France, latin 4_2 (South France, 850-900)</witness>
+               <witness xml:id="Sg15">Sankt Gallen, Stiftsbibliothek, 81 (872-873, Sankt Gallen)</witness>
+               <witness xml:id="Rp1">Roma, Abbazia di San Paolo fuori le mura, s.n. (Reims, 870-875)</witness>
+
+            </listWit>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+   </teiHeader>
+
+   <text>
+      <body>
+         <div type="book" n="Cantico dei Cantici">
+            <div type="chapter" n="VII">
+               <p>VII</p>
+
+               <div type="verse" n="1">
+                  <p>
+                     <hi rend="bold">1</hi>
+
+                     quid 
+                     
+                     <app>
+                        <lem>uidebis</lem>
+
+                        <rdg wit="#P15_2" varSeq="1" type="minor" cause="grammatical">uidetis</rdg>
+                        <rdg wit="#P15_2" varSeq="2" type="minor" cause="correction" rend="above">uidebiis</rdg>
+                        <note>Al posto della forma al futuro (tu uidebis) viene riportata quella al presente (uos uidetis), la 't' errata viene corretta in alto con 'bi' nonostante la 'i' fosse già scritta, creando così un raddoppiamento della 'i'.</note>
+                        
+                        <rdg wit="#Sg15" varSeq="1" type="minor" cause="grammatical" rend="subpunctuated">uidebis</rdg>
+                        <note>Tra la 'i' e la 's' c'è un puntino che indica dove l'aggiunta sovrastante va inserita.</note>
+
+                        <rdg wit="#Sg15" varSeq="2" type="minor" cause="correction" rend="above">uidebitis</rdg>
+                        <note>Al posto della forma della seconda persona singolare (tu uidebis) viene riportata quella della seconda persona plurale (uos uidebitis).</note>
+
+                     </app>
+                     
+                     in 
+                     
+                     <app>
+                        <lem>sulamiten</lem>
+
+                        <rdg wit="#Re1_2" varSeq="1" type="minor" cause="mispelling" rend="erasure">suamit</rdg>
+                        <note>La parola pesenta due rasure.</note>
+
+                        <rdg wit="#Re1_2" varSeq="2" type="minor" cause="correction" rend="above">sunamit</rdg>
+                        <note>Prima rasura, piccola (di una lettera?), corretta con 'n'.</note>
+
+                        <rdg wit="#Re1_2 #P15_2 #Sg15" varSeq="3" type="minor" cause="correction" rend="marginal">sunamite</rdg>
+                        <note>Seconda rasura, più grande (due lettere? Forse cancella un 'en'?), corretta con 'e.'. La forma corretta è 'en' ma si è usata l'abbreviazione per il casi in 'em' nonostante ci sta stato spazio per poter indicare la forma corretta senza dover ricorrere a una'abbreviazione.</note>
+
+                     </app> 
+                     
+                     nisi 
+                     
+                     <app>
+                        <lem>choros</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="slip">coros</rdg> <!-- slip o orthographic? -->
+
+                     </app>
+                     
+                     <app>
+                        <lem>castrorum</lem>
+
+                        <rdg wit="#P15_2" varSeq="1" type="minor" cause="slip">castrarum</rdg>
+                        <rdg wit="#P15_2" varSeq="2" type="minor" cause="correction" rend="above" >castrorum</rdg>
+
+                     </app> 
+                     
+                     <app type="rubric" rend="red">
+                        <rdg wit="#Re1_2 #Rp1">uox christi ad ecclesiam</rdg>
+
+                        <rdg wit="#P15_2">ecclesiam</rdg>
+
+                        <rdg wit="#Sg15">christos ecclesiae dicit</rdg>
+
+                     </app>
+                     
+                     quam pulchri sunt gressus tui in calciamentis filia principis 
+                     
+                     <app>
+                        <lem>iunctura</lem>
+
+                        <rdg wit="#Re1_2 #P15_2 #Sg15 #Rp1" type="maior" cause="grammatical">iuncturae</rdg>
+
+                     </app> 
+                     
+                     <app>
+                        <lem>feminum</lem>
+
+                        <rdg wit="#Re1_2" type="minor" cause="slip">fueminum</rdg>
+
+                        <rdg wit="#P15_2" type="minor" cause="slip">foeminum</rdg>
+
+                        <rdg wit="#Rp1" type="minor" cause="grammatical">faemorum</rdg>
+
+                     </app> 
+                     
+                     tuorum sicut 
+                     
+                     <app>
+                        <lem>monilia</lem>
+
+                        <rdg wit="#Re1_2 #P15_2 #Rp1" varSeq="1" type="minor" cause="slip" rend="overstrike">munilia</rdg>
+                        <rdg wit="#Re1_2 #P15_2" varSeq="2" type="minor" cause="correction">monilia</rdg>
+                        <note>Sia in Re1_2 che in P15_2 c'è stato lo stesso errore e la stessa correzione.</note>
+
+                     </app> 
+                     
+                     <app>
+                        <lem>quae</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="orthographic">que</rdg>
+
+                     </app>
+                     
+                     fabricata sunt manu artificis
+                  </p>
+               </div>
+               <div type="verse" n="2">
+                  <p>
+                     <hi rend="bold">2</hi> 
+                     
+                     <app>
+                        <lem>umbilicus</lem>
+
+                        <rdg wit="#Re1_2" varSeq="1" type="minor" cause="slip">ubilicus</rdg>
+                        <rdg wit="#Re1_2" varSeq="2" type="minor" cause="correction" rend="above">umbilicus</rdg>
+
+                     </app> 
+                     
+                     tuus 
+                     
+                     <app>
+                        <rdg wit="#P15_2" type="addition" cause="unknown">sicut</rdg>
+
+                     </app>
+
+                     crater tornatilis numquam indigens poculis uenter tuus sicut aceruus tritici uallatus liliis
+                  </p>
+               </div>
+               <div type="verse" n="3">
+                  <p>
+                     <hi rend="bold">3</hi> 
+                     duo ubera tua sicut duo 
+                     
+                     <app>
+                        <lem>hinuli</lem>
+
+                        <rdg wit="#Re1_2 #Sg15 #Rp1" type="minor" cause="mispelling">hinnuli</rdg>
+
+                     </app>
+                     
+                     gemelli capreae
+                  </p>
+               </div>
+               <div type="verse" n="4">
+                  <p>
+                     <hi rend="bold">4</hi> 
+
+                     collum tuum sicut  
+                     
+                     <app>
+                        <lem>turris</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="slip">turis</rdg>
+
+                     </app>
+                     
+                     eburnea oculi tui sicut 
+                     
+                     <app>
+                        <lem>piscinae</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="orthographic">piscine</rdg>
+
+                     </app>
+                     
+                     in Esebon quae sunt in porta 
+                     
+                     <app>
+                        <lem>filiae</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="orthographic">filie</rdg>
+
+                     </app>
+
+                     multitudinis nasus tuus sicut turris libani
+
+                     <app>
+                        <lem>quae</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="orthographic">que</rdg>
+
+                     </app> 
+                     
+                     <app>
+                        <lem>respicit</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="slip">rospicit</rdg>
+
+                     </app>
+                     
+                     contra 
+
+                     <app>
+                        <lem>damascum</lem>
+
+                        <rdg wit="#Sg15" type="minor" cause="slip">mascum</rdg>
+
+                        <rdg wit="#Sg15" type="minor" cause="correction" rend="above">damascum</rdg>
+                        <note>A inizio parola c'è un puntino che indica dove l'aggiunta sovrastante va inserita.</note>
+
+                     </app>
+
+                  </p>
+               </div>
+               <div type="verse" n="5">
+                  <p>
+                     <hi rend="bold">5</hi> 
+                     
+                     caput tuum ut carmelus et 
+                     
+                     <app>
+                        <lem>comae</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="orthographic">coma</rdg>
+
+                     </app>
+
+                     capitis tui sicut purpura regis uincta canalibus
+
+                  </p>
+               </div>
+               <div type="verse" n="6">
+                  <p>
+                     <hi rend="bold">6</hi> 
+                     
+                     quam pulchra es et quam decora carissima in deliciis
+
+                  </p>
+               </div>
+
+               <div type="verse" n="7">
+                  <p>
+                     <hi rend="bold">7</hi> 
+                     
+                     statura tua adsimilata  
+                     
+                     <app>
+                        <lem>est</lem>
+
+                        <rdg wit="#Rp1" type="minor" cause="slip">es</rdg>
+
+                     </app>
+                     
+                     palmae et ubera tua botris
+
+                  </p>
+
+               </div>
+
+               <app type="rubric" rend="red">
+                  <rdg wit="#Re1_2 #Rp1">sponsus de sacra cruce dicit</rdg>
+
+               </app>
+
+               <div type="verse" n="8">
+                  <p>
+                     <hi rend="bold">8</hi> 
+                     
+                     dixi ascendam in palmam 
+                     
+                     <app>
+                        <lem>adprehendam</lem>
+
+                        <rdg wit="#Re1_2" varSeq="1" type="minor" cause="orthographic" rend="overstrike">adprehendam</rdg>
+                        <rdg wit="#Re1_2" varSeq="2" type="minor" cause="correction">adpprehendam</rdg>
+                        <note>All'asta della lettera 'd' della parola originariamente scritta in modo corretto viene aggiunto un occhiello per trasformarla in 'dp'.</note>
+                        
+                     </app>
+                     
+                     fructus eius 
+                     
+                     <app type="rubric" rend="red">
+                        <rdg wit="#Re1_2">idem de sponsa</rdg>
+
+                        <rdg wit="#Rp1">sponsus de sponsa</rdg>
+
+                     </app>
+                     
+                     et erunt ubera tua sicut botri 
+                     
+                     <app>
+                        <lem>uineae</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="orthographic">uinee</rdg>
+
+                     </app>
+                      
+                     et 
+                     
+                     <app>
+                        <lem>odor oris</lem>
+
+                        <rdg wit="#Re1_2 #P15_2 #Sg15 #Rp1" varSeq="1" type="maior" cause="unknown" rend="erasure">odores</rdg>
+                        <rdg wit="#P15_2" varSeq="2" type="maior" cause="correction" rend="above">odor oris</rdg>
+                        <note>Anche P15_2 in precedenza aveva la forma errata presente in Re1_2, poi corretta con una rasura su 'es' e con 'oris' scritto in alto.</note>
+
+                     </app>
+                     
+                     tui sicut malorum
+
+                  </p>
+
+               </div>
+
+               <div type="verse" n="9">
+                  <p>
+                     <hi rend="bold">9</hi> 
+                     
+                     guttur tuum sicut uinum optimum 
+                     
+                     <app type="rubric" rend="red">
+                        <rdg wit="#Re1_2">ecclesia de sinagoga dicit</rdg>
+
+                        <rdg wit="#P15_2">ecclesia de sinagogae dicit</rdg>
+
+                        <rdg wit="#Sg15 #Rp1">ecclesia de christo dicit</rdg>
+
+                     </app>
+                     
+                     dignum 
+                     
+                     <app>
+                        <lem>dilecto meo</lem>
+
+                        <rdg wit="#Re1_2" varSeq="1">dilecto meo</rdg>
+                        <rdg wit="#Re1_2" varSeq="2" type="deletion" rend="strikethrough">dilecto</rdg>
+
+                     </app>
+                     
+                     ad potandum labiisque et dentibus illius ruminandum
+
+                  </p>
+
+               </div>
+
+               <app type="rubric" rend="red">
+                  <rdg wit="#Re1_2">sponsa de sponso</rdg>
+
+               </app>
+
+               <div type="verse" n="10">
+                  <p>
+                     <hi rend="bold">10</hi> 
+                     ego dilecto meo et ad me conuersio 
+
+                     <app>
+                        <lem>eius</lem>
+
+                        <rdg wit="#Sg15" type="maior" cause="unknown">est</rdg>
+
+                     </app>
+                  </p>
+               </div>
+
+               <app type="rubric" rend="red">
+                  <rdg wit="#Rp1">sponsa de sponso </rdg>
+                  <note>In Rp1 la rubrica è alla fine del verso, mentre dovrebbe trovarsi all'inizio. Sul manoscritto questa divisione è segnata da un tratto rosso che divide la prima rubrica dalla seconda.</note>
+
+                  <rdg wit="#Re1_2 #Rp1">ecclesia ad christum</rdg>
+
+               </app>
+
+               <div type="verse" n="11">
+                  <p>
+                     <hi rend="bold">11</hi> 
+                     
+                     ueni dilecte mi egrediamur in agrum commoremur in 
+
+                     <app>
+                        <lem>uillis</lem>
+
+                        <rdg wit="#P15_2" varSeq="1" type="minor" cause="mispelling" rend="overstrike">ualles</rdg>
+                        <rdg wit="#P15_2" varSeq="2" type="minor" cause="correction">illis</rdg>
+                        <note>Da 'valles' la 'a' e la 'e' sono state sbarrate con dei tratti verticali in modo da rendele delle 'i'.</note>
+
+                     </app>
+
+                  </p>
+
+               </div>
+
+               <div type="verse" n="12">
+                  <p>
+                     <hi rend="bold">12</hi> 
+                     
+                     mane surgamus ad uineas uideamus si floruit uinea si flores fructus parturiunt si floruerunt mala punica ibi dabo tibi ubera mea
+
+                  </p>
+
+               </div>
+
+               <div type="verse" n="13">
+                  <p>
+                     <hi rend="bold">13</hi> 
+                     
+                     <app>
+                        <lem>mandragorae</lem>
+
+                        <rdg wit="#P15_2" type="minor" cause="orthographic">mandragore</rdg>
+
+                     </app> 
+                     
+                     dederunt odorem in 
+                     
+                     <app>
+                        <lem>portis</lem>
+
+                        <rdg wit="#P15_2" varSeq="1" type="minor" cause="slip">partis</rdg>
+                        <rdg wit="#P15_2" varSeq="2" type="minor" cause="correction" rend="above">portis</rdg>
+
+                     </app>
+                     
+                     nostris omnia poma noua et uetera dilecte mi seruaui tibi
+
+                  </p>
+
+               </div>
+
+            </div>
+
+         </div>
+
+      </body>
+
+   </text>
+
+</TEI>
