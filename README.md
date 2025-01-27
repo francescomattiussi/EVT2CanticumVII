@@ -1,7 +1,5 @@
 # Edizione digitale del Cantico dei Cantici
 
-## Descrizione del progetto
-
 Questo progetto consiste nella creazione di un'edizione digitale del capitolo VII del Cantico dei Cantici, uno dei testi poetici più affascinanti della tradizione biblica. L'obiettivo principale è offrire una rappresentazione critica e dettagliata del testo, codificata seguendo lo standard XML-TEI, che permette di strutturare e annotare i dati testuali in maniera precisa e conforme alle migliori pratiche della filologia digitale.
 
 La visualizzazione del progetto è stata realizzata utilizzando [EVT Viewer](https://github.com/evt-project/evt-viewer), una piattaforma pensata per la fruizione di edizioni digitali direttamente nel browser. Grazie a questa soluzione, è possibile navigare il testo e le sue varianti in modo interattivo, accedendo alle annotazioni critiche e ai dettagli filologici con facilità.
